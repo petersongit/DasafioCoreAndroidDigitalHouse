@@ -10,15 +10,25 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val btnTelaRegistro = findViewById<Button>(R.id.btnRegistrar)
+        val btnRegistrar = findViewById<Button>(R.id.btnRegistrar)
+        val btnAcessar = findViewById<Button>(R.id.btnLogin)
 
-        btnTelaRegistro.setOnClickListener{
+        btnRegistrar.setOnClickListener{
             abrirTelaCadastroUsuario()
         }
+
+        btnAcessar.setOnClickListener({
+            abrirTelaHome()
+        })
     }
 
     fun abrirTelaCadastroUsuario(){
-        val intent = Intent(this, CadastroUsuario::class.java)
+        val intent = Intent(this, CadastroUsuarioActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun abrirTelaHome(){
+        val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
     }
 }

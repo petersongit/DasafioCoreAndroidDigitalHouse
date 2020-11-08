@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ComidaFragment"
+
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgPrato"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_weight="1"
+        android:foreground="@drawable/prato2"
+        />
+
+
+
+        <TextView
+            android:id="@+id/tvNomeRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tony Roma's"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/tvEnderecoRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Av. Lavandisca, 717 - Indianópolis, São Paulo Fecha às 22:00"
+            android:background="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

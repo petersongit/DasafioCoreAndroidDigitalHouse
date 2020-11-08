@@ -3,9 +3,9 @@ package com.example.digitalhousefoods
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class CadastroUsuario : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cadastro_usuario)
+        setContentView(R.layout.activity_tela_home)
     }
 }
