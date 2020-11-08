@@ -12,7 +12,7 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        Toast.makeText(this, "Splash", Toast.LENGTH_LONG).show()
+       //Toast.makeText(this, "Splash", Toast.LENGTH_LONG).show()
 
         Handler(Looper.getMainLooper()).postDelayed({
             finish()

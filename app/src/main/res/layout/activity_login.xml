@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"/>
+            android:text="@string/txt_email"/>
 
         <EditText
             android:id="@+id/edEmail"
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Senha"/>
+            android:text="@string/txt_senha"/>
 
         <EditText
             android:id="@+id/edSenha"
@@ -41,10 +41,10 @@
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:layout_marginTop="30dp"
-            android:background="#FF5252"
-            android:text="LOG IN"
+           android:backgroundTint="@color/vermelho_claro"
+            android:text="@string/btn_login"
             android:textColor="#FFFFFF" />
 
         <TextView
@@ -56,12 +56,12 @@
 
         <Button
             android:id="@+id/btnRegistrar"
-            android:background="#8492A6"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="70dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="REGISTER"/>
+            android:layout_height="55dp"
+            android:backgroundTint="@color/cinza"
+            android:layout_marginTop="90dp"
+            android:text="@string/btn_registro"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 
