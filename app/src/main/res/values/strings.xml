@@ -3,7 +3,9 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="txt_email">Email</string>
     <string name="txt_senha">Password</string>
+    <string name="txt_senha_confirmar">Repeate Password</string>
     <string name="btn_login">LOG IN</string>
     <string name="btn_registro">REGISTER</string>
+    <string name="txt_nome">Name</string>
 
 </resources>

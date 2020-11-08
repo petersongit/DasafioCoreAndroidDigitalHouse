@@ -58,8 +58,8 @@
             android:id="@+id/btnRegistrar"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:backgroundTint="@color/cinza"
             android:layout_marginTop="90dp"
+            android:backgroundTint="@color/cinza"
             android:text="@string/btn_registro"
             android:textColor="@color/white" />
     </LinearLayout>
