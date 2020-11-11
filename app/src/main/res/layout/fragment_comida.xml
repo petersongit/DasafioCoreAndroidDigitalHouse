@@ -5,23 +5,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".ComidaFragment"
+    tools:context=".ComidaFragment">
 
-   >
-
-    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_principal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="5dp"
+        tools:ignore="MissingConstraints">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
 
     <ImageView
         android:id="@+id/imgPrato"
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="200dp"
         android:layout_weight="1"
-        android:foreground="@drawable/prato2"
         />
 
 
@@ -30,7 +34,6 @@
             android:id="@+id/tvNomeRestaurante"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tony Roma's"
             android:textSize="25dp"
             android:textStyle="bold"
             android:background="@color/white"/>
@@ -40,11 +43,16 @@
             android:id="@+id/tvEnderecoRestaurante"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Av. Lavandisca, 717 - Indianópolis, São Paulo Fecha às 22:00"
+            android:background="@color/white"
+            android:layout_marginBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/tvHoraFechamentoRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/white"
             android:layout_marginBottom="16dp"/>
 
-
 </LinearLayout>
-
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

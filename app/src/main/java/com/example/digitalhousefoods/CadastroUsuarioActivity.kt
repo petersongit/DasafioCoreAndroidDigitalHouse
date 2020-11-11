@@ -11,7 +11,7 @@ class CadastroUsuarioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_usuario)
 
-        ActionBar actionBar = getActionBar();
+       // ActionBar actionBar = getActionBar();
 
 
 
