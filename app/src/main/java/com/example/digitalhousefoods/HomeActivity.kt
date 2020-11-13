@@ -14,7 +14,7 @@ class HomeActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home_teste)
+        setContentView(R.layout.activity_home)
 
         listPratos = getAllPratos()
         adapter = PratosAdapter(listPratos)
