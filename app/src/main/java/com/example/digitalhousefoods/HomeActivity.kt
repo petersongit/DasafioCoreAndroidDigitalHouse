@@ -1,7 +1,9 @@
 package com.example.digitalhousefoods
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,10 +27,7 @@ class HomeActivity : AppCompatActivity(){
         rvPratos.layoutManager = LinearLayoutManager(this)
         rvPratos.setHasFixedSize(true)
 
-       // val tvNome: TextView = itemView.findViewById(R.id.tvNomeRestaurante)
-
-
-        }
+    }
 
 
     fun getAllPratos():ArrayList<Prato> {
@@ -38,18 +37,21 @@ class HomeActivity : AppCompatActivity(){
             "Av. Lavandisca, 717 - Indianapolis, São Paulo",
             "Fecha as 22:00"
         )
+
         val p2 = Prato(
             R.drawable.prato3,
             "Aoyama - Moema",
             "Alameda dos Arapanés, 532 - Moema",
             "Fecha as 00:00"
         )
+
         val p3 = Prato(
             R.drawable.prato4,
             "Outback - Moema",
             "Av. Moaci, 187 - Moema, São Paulo",
             "Fecha as 00:00"
         )
+
         val p4 =
             Prato(R.drawable.prato2, "Sí Señor!", "Alameda Jauaperi, 626 - Moema", "Fecha as 01:00")
 
@@ -59,5 +61,9 @@ class HomeActivity : AppCompatActivity(){
 
     }
 
+    fun abrirTelaDetalhe(){
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
 
 }

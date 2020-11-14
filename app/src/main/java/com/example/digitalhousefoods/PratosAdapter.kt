@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class PratosAdapter(private val listDePratos: List<Prato>):RecyclerView.Adapter<PratosAdapter.PratosViewHolder>() {
-
+    
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PratosViewHolder {
         val itemView=LayoutInflater.from(parent.context).inflate(R.layout.card_comida, parent, false)
         return PratosViewHolder(itemView)
